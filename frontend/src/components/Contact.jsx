@@ -66,8 +66,8 @@
             {
                 icon: <Mail className="w-6 h-6" />,
                 label: "Email",
-                value: "ivineshaji@gmail.com",
-                href: "mailto:ivineshaji@gmail.com",
+                value: "ivineshaji123@gmail.com",
+                href: "mailto:ivineshaji123@gmail.com",
                 color: "from-red-400 to-red-600",
                 description: "Drop me a line anytime"
             },

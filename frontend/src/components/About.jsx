@@ -126,25 +126,28 @@ const About = () => {
                 <div className="group relative bg-gradient-to-br from-green-50 to-emerald-100 dark:from-green-900/20 dark:to-emerald-900/30 rounded-xl p-3 sm:p-4 hover:shadow-lg transition-all duration-300 border border-green-200/50 dark:border-green-700/50">
                   <div className="flex items-center mb-2 sm:mb-3">
                     <span className="text-xl sm:text-2xl mr-2 sm:mr-3">🎯</span>
-                    <span className="font-bold text-base sm:text-lg text-green-600 dark:text-green-400">TryHackMe</span>
+                    <span className="font-bold text-base sm:text-lg text-green-600 dark:text-green-400">
+                      TryHackMe
+                    </span>
                     <div className="ml-auto w-2 h-2 sm:w-3 sm:h-3 bg-green-400 rounded-full animate-pulse"></div>
                   </div>
+              
                   <div className="flex justify-center overflow-hidden">
-                    <img 
-                      src="https://tryhackme-badges.s3.amazonaws.com/ISK3.png" 
-                      alt="TryHackMe Badge" 
+                    <iframe
+                      src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=3132940"
+                      style={{ border: "none", maxHeight: "200px" }}
                       className="rounded-lg shadow-md hover:scale-105 transition-transform duration-300 max-w-full h-auto"
-                      style={{ maxHeight: '200px' }}
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'block';
-                      }}
-                    />
+                      loading="lazy"
+                    ></iframe>
+              
+                    {/* Fallback (optional) */}
                     <div className="hidden bg-gray-200 dark:bg-gray-700 rounded-lg p-4 text-center">
                       <span className="text-gray-500 dark:text-gray-400 text-sm">Badge loading...</span>
                     </div>
                   </div>
                 </div>
+              </div>
+
 
                 {/* LeetCode Card */}
                 <div className="group relative bg-gradient-to-br from-orange-50 to-yellow-100 dark:from-orange-900/20 dark:to-yellow-900/30 rounded-xl p-3 sm:p-4 hover:shadow-lg transition-all duration-300 border border-orange-200/50 dark:border-orange-700/50">
